@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Resources\2G3280.jpg" />
+		<None Remove="Resources\3L7RCZ.jpg" />
+		<None Remove="Resources\3XBOTN.jpeg" />
+		<None Remove="Resources\BPV4MM.jpg" />
+		<None Remove="Resources\F895RB.jpg" />
+		<None Remove="Resources\icon.ico" />
+		<None Remove="Resources\icon.jpg" />
+		<None Remove="Resources\icon.png" />
+		<None Remove="Resources\JVL42J.jpg" />
+		<None Remove="Resources\MIO8YV.jpg" />
+		<None Remove="Resources\picture.png" />
+		<None Remove="Resources\PMEZMH.jpg" />
+		<None Remove="Resources\S72AM3.jpg" />
+		<None Remove="Resources\UER2QD.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Resources\2G3280.jpg" />
+		<Resource Include="Resources\3L7RCZ.jpg" />
+		<Resource Include="Resources\3XBOTN.jpeg" />
+		<Resource Include="Resources\BPV4MM.jpg" />
+		<Resource Include="Resources\F895RB.jpg" />
+		<Resource Include="Resources\icon.ico" />
+		<Resource Include="Resources\icon.jpg" />
+		<Resource Include="Resources\icon.png" />
+		<Resource Include="Resources\JVL42J.jpg" />
+		<Resource Include="Resources\MIO8YV.jpg" />
+		<Resource Include="Resources\picture.png" />
+		<Resource Include="Resources\PMEZMH.jpg" />
+		<Resource Include="Resources\S72AM3.jpg" />
+		<Resource Include="Resources\UER2QD.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.11" />
+
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.11">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="connection.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</None>
+
+		<None Update="connection.example.json">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+			<CopyToPublishDirectory>Never</CopyToPublishDirectory>
+		</None>
+	</ItemGroup>
+</Project>

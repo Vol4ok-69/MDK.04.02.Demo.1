@@ -1,0 +1,3 @@
+{
+  "ConnectionString": "Host=localhost;Port=5432;Database=MDK.04.02.Demo.1;Username=postgres;Password=YOUR_PASSWORD"
+}
